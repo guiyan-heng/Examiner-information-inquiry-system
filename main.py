@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 
 root = tk.Tk()
 root.iconphoto(False, PhotoImage(file='dog.png'))
-root.title("考试人员信息查询")
+root.title("考试信息查询")
 root.geometry("1310x800")
 image = Image.open("dog.png")
 dog_image = ImageTk.PhotoImage(image)
