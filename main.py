@@ -5,10 +5,8 @@ import openpyxl
 root = tk.Tk()
 root.iconphoto(False, PhotoImage(file='dog.png'))
 root.title("考试信息查询")
-root.geometry("1310x800")
+root.geometry("800x400")
 
-canvas = tk.Canvas(root, width=300, height=400)
-canvas.pack()
 
 title_label = tk.Label(root, text="考试人员信息查询", font=("微软雅黑", 20), fg="#333333")
 title_label.pack(pady=20)
@@ -24,17 +22,17 @@ query_frame.pack()
 
 name_label = tk.Label(query_frame, text="姓名：", font=("微软雅黑", 14))
 name_label.pack(side=tk.LEFT, padx=5)
-name_input = tk.Entry(query_frame, font=("微软雅黑", 14), width=30)
+name_input = tk.Entry(query_frame, font=("微软雅黑", 14), width=10)
 name_input.pack(side=tk.LEFT)
 
 idn_label = tk.Label(query_frame, text="身份证号：", font=("微软雅黑", 14))
 idn_label.pack(side=tk.LEFT, padx=5)
-idn_input = tk.Entry(query_frame, font=("微软雅黑", 14), width=30)
+idn_input = tk.Entry(query_frame, font=("微软雅黑", 14), width=25)
 idn_input.pack(side=tk.LEFT)
 
 exam_label = tk.Label(query_frame, text="考试类别：", font=("微软雅黑", 14))
 exam_label.pack(side=tk.LEFT, padx=5)
-exam_input = tk.Entry(query_frame, font=("微软雅黑", 14), width=30)
+exam_input = tk.Entry(query_frame, font=("微软雅黑", 14), width=5)
 exam_input.pack(side=tk.LEFT)
 
 
