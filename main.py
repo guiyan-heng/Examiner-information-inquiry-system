@@ -1,20 +1,14 @@
 import tkinter as tk
 from tkinter import messagebox, filedialog, PhotoImage
 import openpyxl
-from PIL import Image, ImageTk
 
 root = tk.Tk()
 root.iconphoto(False, PhotoImage(file='dog.png'))
 root.title("考试信息查询")
 root.geometry("1310x800")
-image = Image.open("dog.png")
-dog_image = ImageTk.PhotoImage(image)
 
 canvas = tk.Canvas(root, width=300, height=400)
 canvas.pack()
-
-
-canvas.create_image(0, 400, anchor=tk.SW, image=dog_image)
 
 title_label = tk.Label(root, text="考试人员信息查询", font=("微软雅黑", 20), fg="#333333")
 title_label.pack(pady=20)
@@ -71,7 +65,7 @@ def search():
 
         v = a and b and c
 
-        if v == True:
+        if v:
             right = right + 1
         else:
             right = right + 0
